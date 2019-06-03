@@ -84,6 +84,7 @@ def main():
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
     try_methods()
     try_functions()
+    try_methods_and_functions()
 
     window.close_on_mouse_click()
 
@@ -242,6 +243,14 @@ def try_methods_and_functions():
 
       8. Draw a SQUARE whose sides are each of length 50.
     """
+    tuttuaf = rg.SimpleTurtle()
+    tuttuaf.pen = rg.Pen('blue', 5)
+    tuttuaf.backward(150)
+
+    tuttuaf.speed = 1
+    draw_many_squares(tuttuaf, 2, 100, 30)
+
+    tuttuaf.speed = 5
 
 
     ####################################################################
