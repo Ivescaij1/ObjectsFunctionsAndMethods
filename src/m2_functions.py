@@ -37,6 +37,8 @@ def main():
     turtle3()
     turtle2()
     turtle2()
+    turtle4()
+    turtle5()
 
     window.close_on_mouse_click()
 
@@ -59,7 +61,7 @@ def turtle1():
 def turtle2():
     """
     Constructs a triangle SimpleTurtle.
-    Makes that SimpleTurle go to a RANDOM point,
+    Makes that SimpleTurtle go to a RANDOM point,
     draws a cool shape, and return to where it started from.
     """
     grace = rg.SimpleTurtle('triangle')
@@ -103,9 +105,28 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+    eve = rg.SimpleTurtle("turtle")
+    eve.pen = rg.Pen('green', 10)
+
+    eve.draw_regular_polygon(random.randrange(3, 10), random.randrange(10, 100))
+
+
+def turtle5():
+    apple = rg.SimpleTurtle('turtle')
+    apple.pen = rg.Pen('red', 10)
+    apple.speed = 30
+
+    apple.draw_circle(random.randrange(10, 100))
+
+    banana = rg.SimpleTurtle('turtle')
+    banana.pen = rg.Pen('yellow', 10)
+    banana.speed = 30
+    banana.draw_square(random.randrange(10, 100))
+
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -137,7 +158,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -167,7 +188,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
