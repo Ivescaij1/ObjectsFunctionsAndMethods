@@ -251,7 +251,17 @@ def try_methods_and_functions():
     draw_many_squares(tuttuaf, 2, 100, 30)
 
     tuttuaf.speed = 5
+    tuttuaf.pen = rg.Pen('red', 5)
+    draw_many_squares(tuttuaf, 10, 50, 15)
 
+    tuttuaf.speed = 100
+    tuttuaf.pen = rg.Pen('red', 35)
+    draw_many_squares(tuttuaf, 8, 300, 60)
+
+    tuttuaf.pen = rg.Pen('black', 3)
+    tuttuaf.backward(200)
+    tuttuaf.draw_circle(30)
+    tuttuaf.draw_square(50)
 
     ####################################################################
     # TODO: 5. Implement this function, per its doc-string above.
