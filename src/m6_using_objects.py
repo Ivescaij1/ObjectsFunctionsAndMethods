@@ -27,11 +27,24 @@ def two_circles():
            -- One is filled with some color and one is not filled.
     -- Waits for the user to press the mouse, then closes the window.
     """
-    window = rg.RoseWindow
+    window = rg.RoseWindow()
+
+    o1 = rg.Point(100, 100)
+    r1 = 50
+    circle1 = rg.Circle(o1, r1)
+    circle1.fill_color = 'blue'
+    circle1.attach_to(window)
+
+    o2 = rg.Point(300, 200)
+    r2 = 75
+    circle2 = rg.Circle(o2, r2)
+    circle2.attach_to(window)
+
+    window.render()
 
     window.close_on_mouse_click()
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this function, per its doc-string above.
+    # DONE: 2. Implement this function, per its doc-string above.
     #    -- ANY two rg.Circle objects that meet the criteria are fine.
     #    -- File  COLORS.txt  lists all legal color-names.
     # Put a statement in   main   to test this function
