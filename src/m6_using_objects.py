@@ -167,9 +167,15 @@ def lines():
     l2.attach_to(window)
     window.render()
 
+    mid_point = l2.get_midpoint()
+
+    print(mid_point)
+    print(mid_point.x)
+    print(mid_point.y)
+
     window.close_on_mouse_click()
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     # ------------------------------------------------------------------
 
 
